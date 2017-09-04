@@ -13,7 +13,7 @@ master="
 plugin.video.bbc 
 plugin.audio.bbc
 "
-
+rm .gitignore
 for branch in $branches; do
 	echo $branch
 	mkdir $branch
@@ -21,6 +21,7 @@ for branch in $branches; do
 	echo "<addons>" >> $branch/addons.xml
 	for addon in ${!branch}; do
 		echo $addon
+		echo $addon >> .gitignore
 		git clone https://github.com/primaeval/$addon.git
 		cd $addon/
 		git fetch
