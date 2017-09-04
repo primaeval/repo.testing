@@ -7,11 +7,51 @@ krypton
 
 krypton="
 script.tvguide.fullscreen
+script.tvguide.fullscreen.skin.carnelian
+script.tvguide.fullscreen.skin.kjb85
+script.tvguide.fullscreen.skin.lapis
+script.tvguide.fullscreen.skin.onyx
+script.tvguide.fullscreen.skin.tycoo
+skin.confluence.wall
+skin.estuary.wall
 "
 
 jarvis="
-plugin.video.bbc 
+context.simple.favourites
 plugin.audio.bbc
+plugin.audio.favourites
+plugin.program.downloader
+plugin.program.fixtures
+plugin.program.simple.favourites
+plugin.video.addons.ini.creator
+plugin.video.addons.ini.player
+plugin.video.bbc
+plugin.video.bbc.live
+plugin.video.boilerroom
+plugin.video.favourites
+plugin.video.hls.playlist.player
+plugin.video.iplayerwww
+plugin.video.playlist.player
+plugin.video.pvr.plugin.player
+plugin.video.rageagain.again
+plugin.video.replay
+plugin.video.stream.searcher
+plugin.video.tvlistings
+plugin.video.tvlistings.xmltv
+plugin.video.tvlistings.yo
+repository.imdbsearch
+repository.primaeval
+script.games.play.mame
+script.skin.tightener
+script.tvguide.fullscreen
+script.tvguide.fullscreen.skin.carnelian
+script.tvguide.fullscreen.skin.kjb85
+script.tvguide.fullscreen.skin.lapis
+script.tvguide.fullscreen.skin.onyx
+script.tvguide.fullscreen.skin.tycoo
+script.webgrab
+skin.confluence.wall
+skin.naked
 "
 
 rm .gitignore
