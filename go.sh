@@ -1,18 +1,19 @@
 #!/bin/bash
 
 branches="
-master
-leia
+jarvis
+krypton
 "
 
-leia="
+krypton="
 script.tvguide.fullscreen
 "
 
-master="
+jarvis="
 plugin.video.bbc 
 plugin.audio.bbc
 "
+
 rm .gitignore
 for branch in $branches; do
 	echo $branch
@@ -21,11 +22,12 @@ for branch in $branches; do
 	echo "<addons>" >> $branch/addons.xml
 	for addon in ${!branch}; do
 		echo $addon
-		echo $addon >> .gitignore
+		echo /$addon >> .gitignore
 		git clone https://github.com/primaeval/$addon.git
 		cd $addon/
 		git fetch
-		git checkout $branch
+		branchname=${branch/jarvis/master}
+		git checkout $branchname
 		tag=$(git describe --abbrev=0 --tags)
 		echo
 		echo $tag
